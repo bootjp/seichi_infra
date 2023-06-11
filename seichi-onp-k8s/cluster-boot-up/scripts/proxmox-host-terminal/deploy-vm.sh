@@ -9,15 +9,15 @@ TEMPLATE_BOOT_IMAGE_TARGET_VOLUME=prd-network-01-lun01
 BOOT_IMAGE_TARGET_VOLUME=local-lvm
 SNIPPET_TARGET_VOLUME=seichi-prox-backup04
 SNIPPET_TARGET_PATH=/mnt/pve/${SNIPPET_TARGET_VOLUME}/snippets
-REPOSITORY_RAW_SOURCE_URL="https://raw.githubusercontent.com/GiganticMinecraft/seichi_infra/${TARGET_BRANCH}"
+REPOSITORY_RAW_SOURCE_URL="https://raw.githubusercontent.com/bootjp/seichi_infra/${TARGET_BRANCH}"
 VM_LIST=(
     #vmid #vmname             #cpu #mem  #targetip      #targethost
-    "1001 seichi-onp-k8s-cp-1 4    8192  192.168.16.150 unchama-sv-prox01"
-    "1002 seichi-onp-k8s-cp-2 4    8192  192.168.16.151 unchama-sv-prox02"
-    "1003 seichi-onp-k8s-cp-3 4    8192  192.168.16.153 unchama-sv-prox04"
-    "1101 seichi-onp-k8s-wk-1 6    24576 192.168.16.150 unchama-sv-prox01"
-    "1102 seichi-onp-k8s-wk-2 6    18432 192.168.16.151 unchama-sv-prox02"
-    "1103 seichi-onp-k8s-wk-3 6    24576 192.168.16.153 unchama-sv-prox04"
+    "1001 seichi-onp-k8s-cp-1 4    8192  192.168.16.150 pve4amd"
+    "1002 seichi-onp-k8s-cp-2 4    8192  192.168.16.151 pve5amd"
+    "1003 seichi-onp-k8s-cp-3 4    8192  192.168.16.153 pve6amd"
+    "1101 seichi-onp-k8s-wk-1 6    24576 192.168.16.150 pve4amd"
+    "1102 seichi-onp-k8s-wk-2 6    18432 192.168.16.151 pve5amd"
+    "1103 seichi-onp-k8s-wk-3 6    24576 192.168.16.153 pve6amd"
 )
 
 #endregion
